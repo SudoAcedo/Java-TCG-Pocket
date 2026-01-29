@@ -9,7 +9,7 @@ public class estadoJugador {
 
     public static void inicializarEstado() {
 
-        File file = new File("C:\\Users\\pablo\\Desktop\\TCGjava\\jugador_data.txt");
+        File file = new File("file");
         try {
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
@@ -39,7 +39,7 @@ public class estadoJugador {
 
     public static void guardarEstado() {
 
-        File file = new File("C:\\Users\\pablo\\Desktop\\TCGjava\\jugador_data.txt");
+        File file = new File("file");
         try {
             FileWriter fw = new FileWriter(file);
             BufferedWriter bw = new BufferedWriter(fw);
@@ -51,3 +51,4 @@ public class estadoJugador {
         }
     }
 }
+
