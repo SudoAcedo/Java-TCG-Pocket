@@ -12,7 +12,7 @@ public class lucha {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
 
-        ArrayList<HashMap<String, String>> todosLosPokemon = utilidades.cargarPokemonData("C:\\Users\\pablo\\Desktop\\TCGjava\\pokemon_data.txt");
+        ArrayList<HashMap<String, String>> todosLosPokemon = utilidades.cargarPokemonData("file");
 
         ArrayList<HashMap<String, String>> pokemonObtenidos = new ArrayList<>();
 
@@ -44,12 +44,12 @@ public class lucha {
         System.out.println("Tu batalla será entre:");
         System.out.println();
         System.out.println("POKÉMON 1: " + datosPokemon1.get("Nombre"));
-        System.out.println(utilidades.cargarAsciiArt("C:\\Users\\pablo\\Desktop\\ascii_art\\" + datosPokemon1.get("Imagen_ASCII")));
+        System.out.println(utilidades.cargarAsciiArt("file" + datosPokemon1.get("Imagen_ASCII")));
         System.out.println("-".repeat(22));
         System.out.println();
 
         System.out.println("POKÉMON 2: " + datosPokemon2.get("Nombre"));
-        System.out.println(utilidades.cargarAsciiArt("C:\\Users\\pablo\\Desktop\\ascii_art\\" + datosPokemon2.get("Imagen_ASCII")));
+        System.out.println(utilidades.cargarAsciiArt("file" + datosPokemon2.get("Imagen_ASCII")));
         System.out.println("-".repeat(22));
         System.out.println();
 
@@ -96,4 +96,5 @@ public class lucha {
             System.out.println("😢 Lo siento, Has perdido la batalla.");
         }
     }
+
 }
