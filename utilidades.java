@@ -8,7 +8,7 @@ public class utilidades {
 
     public static ArrayList<HashMap<String,String>> cargarPokemonData(String ruta) {
 
-        File file = new File("C:\\Users\\pablo\\Desktop\\TCGjava\\pokemon_data.txt");
+        File file = new File("file");
 
         try {
 
@@ -83,4 +83,5 @@ public class utilidades {
 
 
     }
+
 }
