@@ -12,7 +12,7 @@ public class gestionCartas {
         System.out.printf("%-5s%s %-10s%s %-22s%s %-10s%s %-9s%s %-6s%s %-4s%s %-8s%s %-8s%s %-13s%s %-14s%s %-10s%s %-7s%s", "ID", "|", "Nombre", "|", "Tipo", "|", "Hábitat", "|", "Altura", "|", "Peso", "|", "HP", "|", "Ataque", "|", "Defensa", "|", "Ataque esp.", "|", "Defensa esp.", "|", "Velocidad", "|", "Rareza", "|");
         System.out.println();
 
-        ArrayList<HashMap<String,String>> pokemons = utilidades.cargarPokemonData("C:\\Users\\pablo\\Desktop\\TCGjava\\pokemon_data.txt");
+        ArrayList<HashMap<String,String>> pokemons = utilidades.cargarPokemonData("file");
 
         for (HashMap<String,String> pokemon : pokemons) {
             if (estadoJugador.estadoJugador.get(pokemon.get("Nombre")) != 0) {
@@ -27,3 +27,4 @@ public class gestionCartas {
 
     }
 }
+
